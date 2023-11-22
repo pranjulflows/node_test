@@ -15,12 +15,9 @@
   "author": "Pranjul",
   "license": "ISC",
   "dependencies": {
-    "@netlify/plugin-lighthouse": "^5.0.0",
     "axios": "^1.6.2",
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
-    "lighthouse": "^11.3.0",
-    "netlify-cli": "^17.6.0",
     "serverless-http": "^3.2.0",
     "word-wrap": "^1.2.5"
   }
