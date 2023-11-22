@@ -1,4 +1,6 @@
 const express = require('express')
+const serverless = require('serverless-http');
+
 require('dotenv').config()
 
 const app = express()
@@ -23,3 +25,6 @@ app.get('/youtube', (req, res) => {
 app.listen(process.env.PORT, () => {
     console.log(`Example app listening on port ${process.env.PORT}`)
 })
+module.exports = app;
+
+module.exports.handler = serverless(app);
